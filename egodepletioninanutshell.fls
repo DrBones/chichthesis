@@ -1,0 +1,6 @@
+PWD C:/Users/Jonas/Desktop/Chich Thesis
+INPUT c:/texlive/2013/texmf.cnf
+INPUT c:/texlive/2013/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT egodepletioninanutshell.tex
+OUTPUT egodepletioninanutshell.log

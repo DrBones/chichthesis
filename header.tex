@@ -1,0 +1,331 @@
+% ***********************************************************
+% ******************* PHYSICS HEADER ************************
+% ***********************************************************
+%\documentclass[11pt]{article} 
+% \documentclass[12pt,twoside,a4paper]{article}
+% \documentclass[12pt,twoside,a4paper]{scrbook}
+% \documentclass[DIV=14,BCOR=8mm,12pt,twoside,a4paper]{scrbook}
+\documentclass[12pt,twoside,a4paper]{scrbook}
+% \setkomafont{sectioning}{\normalcolor\bfseries}
+%%%%%%%%%%%%%% PACKAGE INCLUDES %%%%%%%%%%%%%%%
+% \usepackage{scrhack}
+\usepackage[utf8]{inputenc} %allows input of utf8 characters
+% \usepackage[british]{babel}
+\usepackage[T1]{fontenc} %more complete but lower quality than ComMod fontpacke
+% \usepackage{ae,aecompl}
+\usepackage[tbtags]{mathtools}
+\usepackage[
+backend=biber, 
+style=authoryear,    % Zitierstil
+isbn=false,                % ISBN nicht anzeigen, gleiches geht mit nahezu allen anderen Feldern
+pagetracker=true,          % ebd. bei wiederholten Angaben (false=ausgeschaltet, page=Seite, spread=Doppelseite, true=automatisch)
+maxbibnames=50,            % maximale Namen, die im Literaturverzeichnis angezeigt werden (ich wollte alle)
+maxcitenames=3,            % maximale Namen, die im Text angezeigt werden, ab 4 wird u.a. nach den ersten Autor angezeigt
+autocite=inline,           % regelt Aussehen für \autocite (inline=\parancite)
+block=space,               % kleiner horizontaler Platz zwischen den Feldern
+backref=true,              % Seiten anzeigen, auf denen die Referenz vorkommt
+backrefstyle=three+,       % fasst Seiten zusammen, z.B. S. 2f, 6ff, 7-10
+date=short,                % Datumsformat
+]{biblatex}
+\addbibresource{egodepletion.bib}
+\renewcommand*{\nameyeardelim}{\addcomma\addspace}
+\let\citep\parencite
+\setlength{\bibitemsep}{1em}     % Abstand zwischen den Literaturangaben
+\setlength{\bibhang}{2em} 
+%\usepackage{amsmath} % AMS Math Package
+% \usepackage{amsthm} % Theorem Formatting
+% \usepackage{amssymb}	% Math symbols such as \mathbb
+\usepackage{graphicx} % Allows for eps images
+% \usepackage{multirow}
+% \usepackage{multicol} % Allows for multiple columns
+% \usepackage{color} % well, supplies colors
+\usepackage{todonotes}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{grffile}
+% \usepackage{dsfont}%supplies 1 and lowercase k in blackboard bold
+% \usepackage{tikz}
+% \newcommand{\axes}{\draw[style={<->,thin}] (-1,0.65) node[left,align=center] {$x$} -- (0,0) --  (1,0.65) node[right] {$y$};}
+% \newcommand{\curveoutline}{
+% \draw[lightgray] (-0.85,6) .. controls (-0.9,1.75) and (0.7,1.7) .. (1.23,1.35);
+% \draw[lightgray] (0.18,6) .. controls(0.25,3.3) and (0.58,2.8) .. (1.23,2.35);}
+% \newcommand{\curveoutlinedark}{
+% \draw[lightgray] (-0.8,6) .. controls (-0.9,1.75) and (0.7,1.7) .. (1.23,1.35);
+% \draw[lightgray] (0.18,6) .. controls(0.25,3.3) and (0.58,2.8) .. (1.23,2.35);}
+% \usetikzlibrary{matrix,decorations.pathreplacing,shapes.multipart,calc}
+\usepackage[section]{placeins} %supplies \FloatBarrier to stop floats
+\usepackage{setspace} %Zeilenabstand
+\usepackage[pagestyles,raggedright]{titlesec}
+\usepackage{float}
+%--------------------------------------
+% Loosen latex float to text ratio and other float related things. Explanation
+%on pages 199–200, section C.9 of the LaTeX manual.
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\renewcommand{\dbltopfraction}{.66}
+\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+%----------------------------------------
+% %define custom float
+% \floatstyle{plain}
+% \newfloat{algo}{thp}{lop}[chapter]
+% \floatname{algo}{Algorithm}
+
+% Page setup (titlesec)
+\titleformat{\chapter}[hang]
+{\normalfont\huge\bfseries}{\thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter} {0pt}{50pt}{40pt}[30pt]
+
+\newpagestyle{main}{%
+  \headrule
+  \sethead[\chaptertitlename~\thechapter\quad\chaptertitle][][]{}{}{\thesection\quad\sectiontitle}
+  % \footrule
+\renewcommand{\makefootrule}{%
+  % \makebox[0pt][l]{\rule[.7\baselineskip]{\linewidth}{0.8pt}}%
+  % \color{red}%
+  \rule[1.3\baselineskip]{\linewidth}{0.4pt}}
+  \setfoot[][\thepage][]{}{\thepage}{}
+}
+\newpagestyle{bib}{%
+  \headrule
+  \sethead[\chaptertitle][][]{}{}{\chaptertitle}
+  % \footrule
+\renewcommand{\makefootrule}{%
+  % \makebox[0pt][l]{\rule[.7\baselineskip]{\linewidth}{0.8pt}}%
+  % \color{red}%
+  \rule[1.3\baselineskip]{\linewidth}{0.4pt}}
+  \setfoot[][\thepage][]{}{\thepage}{}
+}
+\newpagestyle{abstract}{%
+  \headrule
+  \sethead[\sectiontitle][][]{}{}{\sectiontitle}
+  % \footrule
+\renewcommand{\makefootrule}{%
+  % \makebox[0pt][l]{\rule[.7\baselineskip]{\linewidth}{0.8pt}}%
+  % \color{red}%
+  \rule[1.3\baselineskip]{\linewidth}{0.4pt}}
+  \setfoot[][\thepage][]{}{\thepage}{}
+}
+% \usepackage{calligra}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+% \DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+% \DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newenvironment{pzcseries}{\fontfamily{pzc}\selectfont}{}
+\newcommand{\textpzc}[1]{{\pzcseries#1}}
+\newenvironment{frcseries}{\fontfamily{frc}\selectfont}{}
+\newcommand{\textfrc}[1]{{\frcseries#1}}
+\newcommand{\mathfrc}[1]{\text{\textfrc{#1}}}
+\assignpagestyle{\chapter}{empty} %pages on which chapters start have now {} layout
+%\onehalfspacing
+% \usepackage{mathptmx}
+% \usepackage{bbold}
+% \usepackage{bold-extra} % Ugly bitmap fonts, but holds bold glyphs!
+% \usepackage{kpfonts} % Pretty complete fontpackage but looks 'different'
+% \usepackage[
+%     pdftitle={Ego Depletion},    % title
+%     pdfauthor={Christian Bürckel},     % author
+%     pdfsubject={},   % subject of the document
+%     pdfcreator={Christian Bürckel},   % creator of the document
+%     pdfproducer={Christian Bürckel}, % producer of the document
+%     pdfkeywords={Statistics}, % list of keywords
+%     % linktocpage=true,
+%     linkcolor=red,          % color of internal links
+%     citecolor=green,        % color of links to bibliography
+%     filecolor=magenta,      % color of file links
+%     urlcolor=cyan           % color of external links
+%     % pagebackref=true
+%     ]{hyperref}
+% \usepackage[all]{hypcap} % shifts the link point to the top of tables or figures so it is visible when clicked
+\usepackage{array}
+%\usepackage[final]{svninfo}
+\usepackage{tabulary}
+\usepackage{tabularx}
+%\usepackage{ifthen}
+%\usepackage[dvips]{graphicx}
+\usepackage[margin=10pt]{subfig} 		%enabled the use of subfloats within a float
+\usepackage[capitalize]{cleveref}
+\crefname{table}{Tab.}{Tabs.}
+\crefname{dfn}{Def.}{Defs.}
+\crefname{section}{Sec.}{Secs.}
+\crefname{algo}{Alg.}{Algs.}
+\crefname{equation}{Eqn.}{Eqns.}
+\crefformat{equation}{Eqn.~#2#1#3}
+\crefrangeformat{equation}{Eqns.~#3#1#4 to~#5#2#6}
+\Crefformat{equation}{Equation~#2#1#3}
+\Crefrangeformat{equation}{Equations.~#3#1#4 to~#5#2#6}
+%\usepackage{textcomp}
+%\usepackage{pstricks}
+% % Fix latex
+% \def\smallskip{\vskip\smallskipamount}
+% \def\medskip{\vskip\medskipamount}
+% \def\bigskip{\vskip\bigskipamount}
+%  
+%  % Hand made theorem
+%  \newcounter{thm}
+%  \renewcommand{\thethm}{\thechapter.\arabic{thm}}
+%  \def\claim#1{\par\medskip\noindent\refstepcounter{thm}\hbox{\bf #1 \arabic{thm}.}
+%  %\ignorespaces
+%  }
+%  \def\endclaim{
+%  \par\medskip}
+%  \newenvironment{thm}{\claim}{\endclaim}
+%\usepackage{courier}
+%\usepackage{geometry}
+% \usepackage[algo2e,algoruled,algochapter]{algorithm2e}
+%\usepackage{url}
+\usepackage{tikz}
+\tikzstyle{every picture}+=[remember picture]
+\usetikzlibrary{decorations.pathreplacing,decorations.markings,circuits.ee.IEC}
+%\usepackage{paralist}
+%\usepackage{xspace}
+%\usepackage[dvips,letterpaper,margin=0.75in,bottom=0.5in]{geometry}
+ % Sets margins and page size
+%\pagestyle{empty} % Removes page numbers
+%\makeatletter % Need for anything that contains an @ command 
+%\renewcommand{\maketitle} % Redefine maketitle to conserve space
+%{ \begingroup \vskip 10pt \begin{center} \large {\bf \@title}
+%	\vskip 10pt \large \@author \hskip 20pt \@date \end{center}
+%  \vskip 10pt \endgroup \setcounter{footnote}{0} }
+%\makeatother % End of region containing @ commands
+\usepackage{enumerate}
+\renewcommand{\labelenumi}{(\alph{enumi})} 		% Use letters for enumerate
+
+% Shortcuts to Named Objects
+\newcommand{\gfnc}{\textsc{Green}'s function} 		% call with {} like \gfnc{} to ensure following whitespace
+\newcommand{\gfncs}{\textsc{Green}'s functions} 		% call with {} like \gfnc{} to ensure following whitespace
+\newcommand{\cgfnc}{\textsc{Green}'s Function} 		% call with {} like \gfnc{} to ensure following whitespace
+\newcommand{\cgfncs}{\textsc{Green}'s Functions} 		% call with {} like \gfnc{} to ensure following whitespace
+\newcommand{\hamil}{\textsc{Hamilton}ian}
+\newcommand{\rash}{\textsc{Rashba}}
+\newcommand{\sdg}{\textsc{Schr\"odinger} equation}
+\newcommand{\lanbform}{\textsc{Landauer-B\"uttiker} formalism}
+\newcommand{\clanbform}{\textsc{Landauer-B\"uttiker} Formalism}
+
+% Vectors and matrices
+\let\vaccent=\v 					% rename builtin command \v{} to \vaccent{}
+\renewcommand{\v}[1]{\ensuremath{\boldsymbol{#1}}} 	% for vectors
+\newcommand{\mat}[1]{\ensuremath{\boldsymbol{#1}}} 	% for matrices
+\newcommand{\uv}[1]{\ensuremath{\mathbf{\hat{#1}}}} 	% for unit vector
+\newcommand{\abs}[1]{\left| #1 \right|} 		% for absolute value
+\newcommand{\avg}[1]{\left< #1 \right>} 		% for average
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+% Derivatives: 
+\let\underdot=\d 					% rename builtin command \d{} to \underdot{}
+\renewcommand{\d}[2]{\frac{d #1}{d #2}} 		% for derivatives
+\newcommand{\dd}[2]{\frac{d^2 #1}{d #2^2}} 		% for double derivatives
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} 	% for partial derivatives
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}} 	% for double partial derivatives
+\newcommand{\pdc}[3]{\left( \frac{\partial #1}{\partial #2} \right)_{#3}} % for thermodynamic partial derivatives
+
+%Dirac style
+\newcommand{\ket}[1]{\left| #1 \right>} 	% for Dirac kets
+\newcommand{\bra}[1]{\left< #1 \right|} 	% for Dirac bras
+\newcommand{\braket}[2]{\left< #1 \vphantom{#2} \right| \left. #2 \vphantom{#1} \right>} % for Dirac brackets
+\newcommand{\expv}[1]{\left< #1 \right>} 	% for expectation value
+\newcommand{\matrixel}[3]{\left< #1 \vphantom{#2#3} \right| #2 \left| #3 \vphantom{#1#2} \right>} % for Dirac matrix elements
+
+%Gradient and curls
+\newcommand{\grad}[1]{\v{\nabla} #1} 		% for gradient
+\let\divsymb=\div 				% rename builtin command \div to \divsymb
+\renewcommand{\div}[1]{\v{\nabla} \cdot #1} 	% for divergence
+\newcommand{\curl}[1]{\v{\nabla} \times #1}	% for curl
+
+\let\baraccent=\= 				% rename builtin command \= to \baraccent
+\renewcommand{\=}[1]{\stackrel{#1}{=}} 		% for putting numbers above =
+% \newtheorem{prop}{Proposition}
+% \newtheorem{thm}{Theorem}[section]
+% \newtheorem{lem}[thm]{Lemma}
+% \theoremstyle{definition}
+% \newtheorem{dfn}{Definition}
+% \newtheorem{algo}{Algorithm}
+% \theoremstyle{remark}
+% \newtheorem*{rmk}{Remark}
+
+%%%%%%%%%%%%%% STYLE %%%%%%%%%%%%%%%
+%\geometry{hmargin={1in,1in},vmargin={2.0in,1.5in}}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% % \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername} \ \thechapter. \ \textbf{#1}}{}}
+% % \renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection \ #1}}}
+% \fancyhead[RE,LO]{}
+% % \fancyhead[RO]{\rightmark}
+% % \fancyhead[LE]{\leftmark}
+% \fancyfoot{}
+% % \fancyfoot[RO,LE]{\thepage}
+% \renewcommand{\footrulewidth}{0.4pt}
+% % \renewcommand{\headrulewidth}{0.4pt}
+% 
+% % \fancypagestyle{plain}{%
+% % \fancyhf{}
+% \fancyfoot[C]{\thepage}
+% % \renewcommand{\headrulewidth}{0pt}
+% % \renewcommand{\footrulewidth}{0.4pt}}
+
+
+% configure subfig
+%\usepackage[small,bf]{caption}
+\usepackage{caption}
+\captionsetup[subfloat]{position=top,labelformat=simple,listofformat=subsimple,singlelinecheck=false}
+\def\thesubfigure{(\alph{subfigure})} 
+%
+%% url
+%\makeatletter
+%\def\url@leostyle{%
+%  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+%\makeatother
+%\urlstyle{leo}
+%
+%
+\numberwithin{equation}{chapter}
+%
+%%%%%%%%%%%%%%%% CODE LISTING SETTINGS %%%%%%%%%%%%%%%
+% \usepackage{listings}
+%
+%\lstset{
+%frame=tb,
+%framesep=5pt,
+%tabsize=2,
+%basicstyle=\scriptsize\ttfamily,
+%showstringspaces=false,
+%stringstyle=\color{red},
+%commentstyle=\color{gray},
+%breaklines=true,
+%numbers=left,
+%numbersep=5pt
+%%numberstyle=\ttfamily,
+%%keywordstyle=\color{green},
+%%identifierstyle=\color{blue},
+%%xleftmargin=5pt,
+%%xrightmargin=5pt,
+%%aboveskip=\bigskipamount,
+%%belowskip=\bigskipamount,
+%%rulecolor=\color{Gray},
+%%numberstyle=\color{blue},
+%}
+
+%\lstdefinelanguage{JavaScript} {
+%morekeywords={
+%break,const,continue,delete,do,while,export,for,in,function,
+%if,else,import,in,instanceOf,label,let,new,return,switch,this,
+%throw,try,catch,typeof,var,void,with,yield
+%},
+%sensitive=false,
+%morecomment=[l]{//},
+%morecomment=[s]{/*}{*/},
+%morestring=[b]",
+%morestring=[d]'
+%}
+%
+%% MACROS
+%\include{macros}
+
+% ***********************************************************
+% ********************** END HEADER *************************
+% ***********************************************************

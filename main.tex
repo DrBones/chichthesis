@@ -1,0 +1,46 @@
+%\RequirePackage{filecontents}
+\input{header.tex}
+%\documentclass[12pt,twoside,a4paper]{scrbook}
+% INFO
+\author{Christian Bürckel}
+\title{Some BWL Title}
+
+\begin{document}
+
+% \selectlanguage{british}
+
+\maketitle
+%\input{title.tex}
+ \thispagestyle{plain} %removes the header 
+% emtpy page
+ \clearpage
+ \thispagestyle{empty}
+ \mbox{}
+ \clearpage
+% TABLE OF CONTENTS
+ \pagestyle{bib} %removes the header from TOC
+ \tableofcontents
+ \clearpage
+ \pagestyle{abstract}
+ \addcontentsline{toc}{section}{Abstract}
+ \section*{Abstract}
+  \input{abstract}
+ \clearpage
+ \pagestyle{main}
+ \chapter{Ego Depletion and its impact on decision-making in a nut shell}
+  \input{egodepletioninanutshell}
+ \chapter{Effects of depletion or why can't I decide what to eat?}
+  \input{effectsofdepletion.tex}
+% \chapter{Survey preparation and experimental set-up}
+%\input{survey.tex}
+% \chapter{Computational Methods}
+%   \section{How to reach Tractability}\label{sec:tractability}
+%   %\input{implementation/observables.tex}
+% \appendix
+% %\input{appendix/RGA.tex}
+\clearpage
+\pagestyle{bib}
+%\bibliographystyle{plainnat}
+  %\input{danksagung.tex}
+%\input{erklaerung.tex}
+\end{document}
