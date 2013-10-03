@@ -1,7 +1,7 @@
 # Fdb version 3
-["biber main"] 1380817324 "main.bcf" "main.bbl" "main" 1380819530
+["biber main"] 1380817324 "main.bcf" "main.bbl" "main" 1380820055
   "egodepletion.bib" 1380716817 80802 52e5578d26fad5f7c1c43a533900e4f1 ""
-  "main.bcf" 1380819529 94445 d33e8d78d4e0ef443d2a4ecc0dcffb0f ""
+  "main.bcf" 1380820054 94445 d33e8d78d4e0ef443d2a4ecc0dcffb0f ""
   (generated)
   "main.bbl"
   "main.blg"
@@ -211,7 +211,7 @@
   "main.out"
   "main.log"
   "main.dvi"
-["pdflatex"] 1380819526 "main.tex" "main.pdf" "main" 1380819530
+["pdflatex"] 1380820051 "main.tex" "main.pdf" "main" 1380820055
   "abstract.tex" 1380815437 727 9cf1ecb3482db626a4966b7cef8e1d2e ""
   "c:/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1379692372 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1379692562 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -410,16 +410,16 @@
   "c:/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1379693699 1135367 347ebbf080e73bdcbc6045fc23163302 ""
   "c:/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1379693734 3823940 137194946d8476fc0d8e53b5d7786d08 ""
   "c:/texlive/2013/texmf.cnf" 1379693686 497 7277663fd190ea5a4fe922b182dc7be2 ""
-  "effectsofdepletion.tex" 1380819525 20733 08d02a39d41d8ca742b522df5856e14d ""
-  "egodepletioninanutshell.tex" 1380817570 4897 2c0b1d89a1acfe0737e3c9601f4d0152 ""
+  "effectsofdepletion.tex" 1380820050 20733 eaa5a2494167c4e014b5ffa65e3a825a ""
+  "egodepletioninanutshell.tex" 1380820002 4896 1988a46263c1bff4d74eed2962690189 ""
   "header.tex" 1380808203 13575 c1df4521d3639537c9aca05233723483 ""
   "images/mainpropositions.png" 1380477776 48758 0bf61d4e1a698ab3b43ad00da2014e5f ""
   "images/twostreams.png" 1380478659 40859 b9d25fa6dcedb3306cb6103831a961a9 ""
-  "main.aux" 1380819529 9127 97fc37712c75dc7780c4c8d77437320a ""
+  "main.aux" 1380820054 9127 97fc37712c75dc7780c4c8d77437320a ""
   "main.bbl" 1380817326 51069 69ae0c749bce80e1089469bdc6651b20 "biber main"
-  "main.run.xml" 1380819529 2313 27c549246874ac36cbaf9825c9aca981 ""
+  "main.run.xml" 1380820054 2313 27c549246874ac36cbaf9825c9aca981 ""
   "main.tex" 1380817573 1147 667f35419640194422e35d62794823b3 ""
-  "main.toc" 1380819529 798 f086baf63474b244964b8af5eea841a2 ""
+  "main.toc" 1380820054 798 f086baf63474b244964b8af5eea841a2 ""
   (generated)
   "main.bcf"
   "egodepletioninanutshell.aux"
