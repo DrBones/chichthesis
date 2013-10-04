@@ -1,7 +1,7 @@
 # Fdb version 3
-["biber main"] 1380900601 "main.bcf" "main.bbl" "main" 1380901769
+["biber main"] 1380903762 "main.bcf" "main.bbl" "main" 1380903920
   "egodepletion.bib" 1380716817 80802 52e5578d26fad5f7c1c43a533900e4f1 ""
-  "main.bcf" 1380901769 94445 d33e8d78d4e0ef443d2a4ecc0dcffb0f ""
+  "main.bcf" 1380903919 94445 d33e8d78d4e0ef443d2a4ecc0dcffb0f ""
   (generated)
   "main.bbl"
   "main.blg"
@@ -211,7 +211,7 @@
   "main.out"
   "main.log"
   "main.dvi"
-["pdflatex"] 1380901766 "main.tex" "main.pdf" "main" 1380901769
+["pdflatex"] 1380903916 "main.tex" "main.pdf" "main" 1380903920
   "abstract.tex" 1380815437 727 9cf1ecb3482db626a4966b7cef8e1d2e ""
   "c:/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1379692372 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1379692562 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -241,7 +241,6 @@
   "c:/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1379692353 1124 6c73e740cf17375f03eec0ee63599741 ""
   "c:/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1379692353 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1379692353 1120 8b7d695260f3cff42e636090a8002094 ""
-  "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1379692373 140176 d0f50dba675c56d445f84a32c1f93a79 ""
   "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1379692373 135942 aecb5af344df420d6ec421db27dedf62 ""
   "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1379692373 139826 3796482349bae544f13f54da58f9706d ""
   "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb" 1379692373 135938 1a19ff976dd71ec9a67855cdbfd83710 ""
@@ -429,16 +428,19 @@
   "egodepletioninanutshell.tex" 1380820002 4896 1988a46263c1bff4d74eed2962690189 ""
   "header.tex" 1380894427 12114 3ed99d15c758c08bb5805158ed322c80 ""
   "images/mainpropositions.png" 1380477776 48758 0bf61d4e1a698ab3b43ad00da2014e5f ""
+  "images/pretest_cars.png" 1380834978 32315 0333edd0663aeb725c461b31e7a12355 ""
   "images/pretest_mp3.png" 1380834975 35285 986dd57b9dc7db584c46d9f92f7efbc8 ""
   "images/pretest_sample_shoes.png" 1380823283 101847 5719b3d59abb09f4cf44156535a3b6f9 ""
   "images/pretest_shoes.png" 1380834969 32912 190a13a4d0e3092aae83f79ca85afc18 ""
+  "images/pretest_sofa.png" 1380834972 32469 1c3fa80aa41d0c680ba2e8c3b95ba2ac ""
+  "images/pretest_wine.png" 1380834980 35291 bca437c40296ba39e9e05db8394a661d ""
   "images/twostreams.png" 1380478659 40859 b9d25fa6dcedb3306cb6103831a961a9 ""
-  "main.aux" 1380901769 12816 49288fcab1963bfe7128b56d067b6a5b ""
-  "main.bbl" 1380900603 51069 69ae0c749bce80e1089469bdc6651b20 "biber main"
-  "main.run.xml" 1380901769 2313 27c549246874ac36cbaf9825c9aca981 ""
+  "main.aux" 1380903919 15949 7b5223521c7a87e36c15e22282976109 ""
+  "main.bbl" 1380903764 51069 69ae0c749bce80e1089469bdc6651b20 "biber main"
+  "main.run.xml" 1380903919 2313 27c549246874ac36cbaf9825c9aca981 ""
   "main.tex" 1380834902 1237 2568a49fb0ea2f30c3b1e5cd17d6404e ""
-  "main.toc" 1380901769 1127 789864c53f1187d722e6a336ce731a85 ""
-  "method.tex" 1380901764 15435 296b7d425c48581daaf65329c9f2d221 ""
+  "main.toc" 1380903919 1127 789864c53f1187d722e6a336ce731a85 ""
+  "method.tex" 1380903915 20476 cf45fec715047a848f4d6ff543a67132 ""
   (generated)
   "main.bcf"
   "egodepletioninanutshell.aux"
