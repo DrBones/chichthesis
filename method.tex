@@ -51,23 +51,57 @@ Figure \ref{fig:pretest_wine} displays the options for the product ‘wine label
 \begin{figure}[h!]
   \begin{center}
     % \showthe\columnwidth % Use this to determine the width of the figure.
-    \subfloat[shoes]{
-\begin{tikzpicture}[text depth=3pt]
-\tikzstyle{every node}=[style={font=\footnotesize\vphantom{Ag}}]
-\node at (0,0) {\includegraphics[trim= 1.1cm 2.4cm 3pt 1.6cm,clip=true,width=220pt]{images/pretest_shoes}};
-\draw (-4,-1.5) node(A){0} ++(0,0.55) node(B){1} ++(0,0.55) node(C){2} ++(0,0.55) node(D){3} ++(0,0.55) node(E){4} ++(0,0.55) node(F){5};
-\draw (-3.4,-2) node[right](A1){blue} ++(1.35,0) node[right](B1){black} ++(1.35,0) node[right](C1){yellow} ++(1.35,0) node[right](D1){green} ++(1.35,0) node[right](E1){union jack};
-\end{tikzpicture}}
-%    \label{fig:pretest_shoes}\includegraphics[trim= 3pt 3pt 3pt 3pt,clip=true,width=220pt]{images/pretest_shoes.png}}
-    \subfloat[mp3 player]{
+    \subfloat[shoes]{\label{fig:pretest_shoes}
+		\begin{tikzpicture}[text depth=3pt]
+		\tikzstyle{every node}=[style={font=\footnotesize\vphantom{Ag}}]
+		\node at (0,0) {\includegraphics[trim= 1.1cm 2.4cm 3pt 1.6cm,clip=true,width=220pt]{images/pretest_shoes}};
+		\draw (-4,-1.5) node(A){0} ++(0,0.55) node(B){1} ++(0,0.55) node(C){2} ++(0,0.55) node(D){3} ++(0,0.55) node(E){4} ++(0,0.55) node(F){5};
+		\draw (-3.4,-2) node[right](A1){blue} ++(1.35,0) node[right](B1){black} ++(1.35,0) node[right](C1){yellow} ++(1.35,0) node[right](D1){green} ++(1.35,0) node[right](E1){union jack};
+	% \node [label={[label distance=1cm]30:label}] {Node};	
+		  \node[shape=circle split,
+		    inner sep= 0pt,
+		    label={[yshift=-15pt, xshift=22pt]liking},
+		    minimum size = 10pt,
+		    line width=0pt,text=white,font=\bfseries,
+		    circle split part fill={likingcyan,likinggrey}
+		    ] at (-2,-2.7) {};
+		  \node[shape=circle split,
+		    inner sep= 0pt,
+		    label={[yshift=-15pt, xshift=32pt]social risk},
+		    minimum size = 10pt,
+		    line width=0pt,text=white,font=\bfseries,
+		    circle split part fill={riskred,riskdarkgrey}
+		    ] at (0,-2.7) {};
+		\end{tikzpicture}}
+    \subfloat[mp3 player]{\label{fig:pretest_mp3}
 		\begin{tikzpicture}[text depth=3pt]
 		\tikzstyle{every node}=[style={font=\footnotesize\vphantom{Ag}}]
 		\node at (0,0) {\includegraphics[trim= 1.1cm 2.4cm 3pt 1.6cm,clip=true,width=220pt]{images/pretest_mp3}};
 		\draw (-4,-1.5) node(A){0} ++(0,0.55) node(B){1} ++(0,0.55) node(C){2} ++(0,0.55) node(D){3} ++(0,0.55) node(E){4} ++(0,0.55) node(F){5};
 		\draw (-3.4,-2) node[right](A1){yellow} ++(1.35,0) node[right](B1){red} ++(1.35,0) node[right](C1){purple} ++(1.35,0) node[right](D1){black} ++(1.35,0) node[right](E1){green};
-		\end{tikzpicture}}
-    % \label{fig:pretest_mp3}\includegraphics[trim= 3pt 3pt 3pt 3pt,clip=true,width=220pt]{images/pretest_mp3}}\\
-    \caption{The results of the pre-test with regard to the product ‘wine label’ are displayed. The chosen products for the final survey are highlighted in colour (‘social risk’= red and ‘liking’ = blue). The ordinate denotes ‘social risk’ and ‘liking’ on a scale ranging from zero to five. The abscissa denotes the product in five different ‘colour’ variants.}\label{fig:pretests}
+	   %  \clip (0,0) circle (8pt);
+    % \begin{scope}
+    %     \fill[likinggrey] (-3,-3) rectangle (0,3);
+    %     \fill[likingcyan] (-0.001,3) rectangle (3,-3);
+    % \end{scope}
+		  \node[shape=circle split,
+		    inner sep= 0pt,
+		    label={[yshift=-15pt, xshift=22pt]liking},
+		    minimum size = 10pt,
+		    line width=0pt,text=white,font=\bfseries,
+		    circle split part fill={likingcyan,likinggrey}
+		    ] at (-2,-2.7) {};
+		  \node[shape=circle split,
+		    inner sep= 0pt,
+		    label={[yshift=-15pt, xshift=32pt]social risk},
+		    minimum size = 10pt,
+		    line width=0pt,text=white,font=\bfseries,
+		    circle split part fill={riskred,riskdarkgrey}
+		    ] at (0,-2.7) {};
+		% \draw \fill[color=red!20 (0,0) circle (1ex);
+		\end{tikzpicture}
+		}
+    \caption{The results of the pre-tests with regard to the product ‘shoes’ and ‘mp3 player’ are displayed. The chosen products for the final survey are highlighted in colour (‘social risk’= red and ‘liking’ = blue). The ordinate denotes ‘social risk’ and ‘liking’ on a scale ranging from zero to five. The abscissa denotes the product in five different ‘colour’ variants.}\label{fig:pretests_shoes_mp3}
   \end{center}
 \end{figure}
 
@@ -75,10 +109,10 @@ Figure \ref{fig:pretest_wine} displays the options for the product ‘wine label
 	\centering
 	\begin{tabu} spread 20pt {r|X[1,c] X[1,c]| c }\toprule
 	% & \multicolumn{6}{c}{Formulations}  \\ \cmidrule{2-7}
-	Groups&female&male&Total\\ \midrule
-	non-depl&36&20&56\\
-	depl&17&13&30  \\\midrule
-	Total& 53& 33 &86 \\\bottomrule
+	Groups   & female & male &Total\\ \midrule
+	non-depl &  36    & 20   &56\\
+	depl     &  17    & 13   &30\\ \midrule
+	Total    &  53    & 33   &86\\ \bottomrule
 	\end{tabu}\\ \vspace{8pt}
 	\begin{tabu} spread 20pt {l r}
 	Pearson chi2(1) =   0.4795&  Pr = 0.489\\
