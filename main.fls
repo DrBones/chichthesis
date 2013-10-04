@@ -217,10 +217,10 @@ INPUT c:/texlive/2013/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/tools/array.sty
-INPUT c:/texlive/2013/texmf-dist/tex/latex/tabulary/tabulary.sty
-INPUT c:/texlive/2013/texmf-dist/tex/latex/tabulary/tabulary.sty
-INPUT c:/texlive/2013/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT c:/texlive/2013/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/tabu/tabu.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/tabu/tabu.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/subfig/subfig.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/subfig/subfig.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
