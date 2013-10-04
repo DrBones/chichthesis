@@ -44,7 +44,7 @@ date=short,                % Datumsformat
 \usepackage{url}
 \usepackage{grffile}
 % \usepackage{dsfont}%supplies 1 and lowercase k in blackboard bold
-% \usepackage{tikz}
+\usepackage{tikz}
 % \newcommand{\axes}{\draw[style={<->,thin}] (-1,0.65) node[left,align=center] {$x$} -- (0,0) --  (1,0.65) node[right] {$y$};}
 % \newcommand{\curveoutline}{
 % \draw[lightgray] (-0.85,6) .. controls (-0.9,1.75) and (0.7,1.7) .. (1.23,1.35);
@@ -175,7 +175,6 @@ date=short,                % Datumsformat
 %  \par\medskip}
 %  \newenvironment{thm}{\claim}{\endclaim}
 %\usepackage{courier}
-%\usepackage{geometry}
 % \usepackage[algo2e,algoruled,algochapter]{algorithm2e}
 %\usepackage{url}
 \usepackage{tikz}
@@ -183,15 +182,15 @@ date=short,                % Datumsformat
 \usetikzlibrary{decorations.pathreplacing,decorations.markings,circuits.ee.IEC}
 %\usepackage{paralist}
 %\usepackage{xspace}
-%\usepackage[dvips,letterpaper,margin=0.75in,bottom=0.5in]{geometry}
- % Sets margins and page size
-%\pagestyle{empty} % Removes page numbers
-%\makeatletter % Need for anything that contains an @ command 
-%\renewcommand{\maketitle} % Redefine maketitle to conserve space
-%{ \begingroup \vskip 10pt \begin{center} \large {\bf \@title}
-%	\vskip 10pt \large \@author \hskip 20pt \@date \end{center}
-%  \vskip 10pt \endgroup \setcounter{footnote}{0} }
-%\makeatother % End of region containing @ commands
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2.5cm]{geometry}
+% Sets margins and page size
+\pagestyle{empty} % Removes page numbers
+\makeatletter % Need for anything that contains an @ command 
+\renewcommand{\maketitle} % Redefine maketitle to conserve space
+{ \begingroup \vskip 10pt \begin{center} \large {\bf \@title}
+	\vskip 10pt \large \@author \hskip 20pt \@date \end{center}
+  \vskip 10pt \endgroup \setcounter{footnote}{0} }
+\makeatother % End of region containing @ commands
 \usepackage{enumitem}
 %\renewcommand{\labelenumi}{(\alph{enumi})} 		% Use letters for enumerate
 

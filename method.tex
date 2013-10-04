@@ -51,8 +51,62 @@ Figure \ref{fig:pretest_wine} displays the options for the product ‘wine label
 \begin{figure}[h!]
   \begin{center}
     % \showthe\columnwidth % Use this to determine the width of the figure.
-    \subfloat[]{\label{fig:pretest_shoes}\includegraphics[width=220pt]{images/pretest_shoes.png}}\hspace{1pt}
-    \subfloat[]{\label{fig:pretest_mp3}\includegraphics[width=220pt]{images/pretest_mp3}}\\
+    \subfloat[shoes]{
+\begin{tikzpicture}[text depth=3pt]
+\tikzstyle{every node}=[style={font=\footnotesize\vphantom{Ag}}]
+\node at (0,0) {\includegraphics[trim= 1.1cm 2.4cm 3pt 1.6cm,clip=true,width=220pt]{images/pretest_shoes}};
+\draw (-4,-1.5) node(A){0} ++(0,0.55) node(B){1} ++(0,0.55) node(C){2} ++(0,0.55) node(D){3} ++(0,0.55) node(E){4} ++(0,0.55) node(F){5};
+\draw (-3.4,-2) node[right](A1){blue} ++(1.35,0) node[right](B1){black} ++(1.35,0) node[right](C1){yellow} ++(1.35,0) node[right](D1){green} ++(1.35,0) node[right](E1){union jack};
+\end{tikzpicture}}
+%    \label{fig:pretest_shoes}\includegraphics[trim= 3pt 3pt 3pt 3pt,clip=true,width=220pt]{images/pretest_shoes.png}}
+    \subfloat[mp3 player]{
+		\begin{tikzpicture}[text depth=3pt]
+		\tikzstyle{every node}=[style={font=\footnotesize\vphantom{Ag}}]
+		\node at (0,0) {\includegraphics[trim= 1.1cm 2.4cm 3pt 1.6cm,clip=true,width=220pt]{images/pretest_mp3}};
+		\draw (-4,-1.5) node(A){0} ++(0,0.55) node(B){1} ++(0,0.55) node(C){2} ++(0,0.55) node(D){3} ++(0,0.55) node(E){4} ++(0,0.55) node(F){5};
+		\draw (-3.4,-2) node[right](A1){yellow} ++(1.35,0) node[right](B1){red} ++(1.35,0) node[right](C1){purple} ++(1.35,0) node[right](D1){black} ++(1.35,0) node[right](E1){green};
+		\end{tikzpicture}}
+    % \label{fig:pretest_mp3}\includegraphics[trim= 3pt 3pt 3pt 3pt,clip=true,width=220pt]{images/pretest_mp3}}\\
     \caption{The results of the pre-test with regard to the product ‘wine label’ are displayed. The chosen products for the final survey are highlighted in colour (‘social risk’= red and ‘liking’ = blue). The ordinate denotes ‘social risk’ and ‘liking’ on a scale ranging from zero to five. The abscissa denotes the product in five different ‘colour’ variants.}\label{fig:pretests}
   \end{center}
 \end{figure}
+
+\begin{table}[!ht]
+\centering
+\begin{tabulary}{\textwidth}{r| c c| c }\toprule
+% & \multicolumn{6}{c}{Formulations}  \\ \cmidrule{2-7}
+Groups&female&male&Total\\ \midrule
+non-depl&36&20&56\\
+depl&17&13&30  \\\midrule
+Total& 53& 33 &86 \\\bottomrule
+\end{tabulary}\\ \vspace{8pt}
+\begin{tabulary}{\textwidth}{l r}
+Pearson chi2(1) =   0.4795&  Pr = 0.489\\
+\end{tabulary}
+\caption{Results of the chi-squared test in regard to ‘gender’ and the ‘depletion’/’non-depletion’ condition.}.
+\label{tab:gender}
+\end{table}
+\setlength{\tabcolsep}{0.83em}
+\def\arraystretch{1.2}
+\begin{table}[!ht]
+\centering
+\begin{tabulary}{\textwidth}{r|r r r r r r }\toprule
+   Group &     Obs    &    Mean  &  Std. Err.&   Std. Dev. & \multicolumn{2}{r}{[95\% Conf. Interval]}  \\ \midrule
+non-depl &      56 &   3.200893 &   .1083786 &   .8110314 &   2.983697 &   3.418088\\
+    depl   &    30 &   3.466667  &  .1579927  &  .8653615&    3.143535 &   3.789798\\
+\midrule
+combined   &    86 &   3.293605 &   .0900479 &   .8350694 &   3.114565 &   3.472644\\
+\midrule
+    diff  &        &  -.2657738  &  .1878331  &         &    -.6393006   &  .107753\\ \midrule[0pt]\midrule[0pt]\midrule[0pt]\midrule[0pt]\midrule[0pt]
+ \multicolumn{3}{l}{diff = mean(0) - mean(1)}& &  \multicolumn{3}{r}{t =  -1.4149}\\
+  \multicolumn{3}{l}{Ho: diff = 0} &              & \multicolumn{3}{r}{degrees of freedom = 84}
+\end{tabulary}
+\vspace{8pt}
+\setlength{\tabcolsep}{2em}
+\begin{tabulary}{\textwidth}{c c c }
+    Ha: diff < 0       &          Ha: diff != 0     &            Ha: diff > 0\\
+ Pr(T < t) = 0.0804  &       Pr(|T| > |t|) = 0.1608    &      Pr(T > t) = 0.9196
+\end{tabulary}
+\caption{Two-sample t-test with equal variances on Consumer Spending on Self-Control results. The table displays the means, the confidence interval, the two tailed p-value, t-value and the degrees of freedom.}
+\label{tab:ttestssc}
+\end{table}
