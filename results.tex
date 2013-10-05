@@ -267,3 +267,70 @@ As expected, this procedure did not produce any evidence that the experimental g
 \subsection{Pearson Chi-Squared (Products)}
 In order to investigate if there were any statistically significant differences in decision-making regarding products with low versus high social risk between depleted participants and non-depleted participants, we conducted a series of chi-squared tests with ‘product lowrisk/highrisk’ as the dependent variable and ‘non-depletion/depletion’ as the independent variable. We expected that depleted participants would opt in favor of products involving a low social risk. For greater clarity, figures on the left depict the absolute numbers, whereas figures on the right depict the ratio.\par
 Results regarding the product ‘sofa’ did not reveal a statistically significant relationship between condition and social risk (\res{Pearson chi\textsuperscript{2} (1)  = 0.7395; p = 0.390}) and in addition the result was converse to our expectation. In contrast to our expectations, 66\% of the non-depletion condition group opted for low risk, whereas 34\% opted for high risk. In the depletion condition group 57\% of the participants opted for low risk, whereas 43\% opted for high risk. As expected, both groups showed a clear preference for the low risk alternative although this preference was more pronounced within the non-depletion condition (see Figure 16). This result was not only unexpected but it also contradicts our initial assumption.
+% \begin{figure}[h!]
+%   \begin{center}
+%     % \showthe\columnwidth % Use this to determine the width of the figure.
+%     \subfloat[Chi-Squared]{\label{tab:chisquared_sofa}
+% 			% \centering
+% 			\begin{tabu} spread 20pt {r|X[1,c] X[1,c]| c }\toprule
+% 			  %  sofa    &   lowrisk &  highrisk &     Total\\ \midrule
+% 			  % non-depl &        37   &      19 &        56 \\
+% 			  %     depl &        17   &      13 &        30 \\\midrule
+% 			  %    Total &        54   &      32 &        86 \\ \bottomrule
+% 			\end{tabu}\\ \vspace{8pt}
+% 			\begin{tabu} spread 20pt {l r}
+% 			Pearson chi2(1) =   0.4795&  Pr = 0.489\\
+% 			\end{tabu}
+% 		}
+%     % \subfloat[sofa]{\label{fig:chart_sofa}\includegraphics[trim= 0cm 0cm 0pt 0cm,clip=true,width=220pt]{images/chart_sofa}}
+%     \caption{Example of Stroop test. (a) Left side (control group = nondepletion). (b) Right side (experimental group = depletion)}\label{fig:green_vs_pink}
+%   \end{center}
+% \end{figure}
+
+\begin{figure}
+\begin{floatrow}
+\capbtabbox{%
+	\begin{tabu} spread 0pt {r|X[1,c] X[1,c]| c }\toprule
+	   sofa    &   lowrisk &  highrisk &     Total\\ \midrule
+	  non-depl &        37   &      19 &        56 \\
+	      depl &        17   &      13 &        30 \\\midrule
+	     Total &        54   &      32 &        86 \\ \bottomrule
+	\end{tabu}\vspace{8pt}
+	\begin{tabu} spread 0pt {c}
+	Pearson chi\textsuperscript{2}(1) =   0.4795  Pr = 0.489
+	\end{tabu}
+}{%
+  \caption{Results of the chi-squared test in regard to ‘social risk’ and the ‘depletion’/‘non-depletion’ condition (sofa).}%
+}
+\capbfigbox{%
+
+		\begin{tikzpicture}[text depth=3pt]
+		\def\ysep{0.78}
+		\tikzstyle{every node}=[style={font=\footnotesize\vphantom{Ag}}]
+		\node at (0,0) {\includegraphics[trim= 1.8cm 1.1cm 2.7cm 1.1cm,clip=true,width=\textwidth/2]{images/chart_sofa}};
+		\draw (-3.8,-2.3) node[anchor=east](A){0\%} ++(0,\ysep) node[anchor=east](B){20\%} ++(0,\ysep) node[anchor=east](C){40\%} ++(0,\ysep) node[anchor=east](D){60\%} ++(0,\ysep) node[anchor=east](E){80\%} ++(0,\ysep) node[anchor=east](F){100\%};
+		\draw (-1.8,-2.6) node[](A1){low risk} ++(3.4,0) node[](B1){high risk};
+	% \node [label={[label distance=1cm]30:label}] {Node};	
+		  \node[shape=circle,
+		    fill=nondepletiongreen,
+		    inner sep= 0pt,
+		    label={[yshift=-1pt]right:non-depletion},
+		    minimum size = 10pt,
+		    line width=0pt,text=white,font=\bfseries,
+		    ] at (-2,2.5) {};
+		  \node[shape=circle,
+		    fill=depletionred,
+		    inner sep= 0pt,
+		    label={[yshift=-1pt]right:depletion},
+		    minimum size = 10pt,
+		    line width=0pt,text=white,font=\bfseries,
+		    ] at (1,2.5) {};
+		% \draw (-3,-3) to[grid with coordinates] (3.5,3);
+		\end{tikzpicture}
+  % \rule{3cm}{3cm}%
+}{%
+  \caption{Ratio of participant decisions concerning ‘lowrisk’ and ‘highrisk’ in relation to non-depletion (green) and depletion (red). The ordinate denotes the share of a scale 0 to 100\%. The abscissa denotes the attribute ‘lowrisk’ and ‘highrisk’ (sofa).}%
+}
+\end{floatrow}
+\end{figure}
+Results regarding the product ‘wine label’ indicate no statistically significant relationship between depletion and social risk (\res{Pearson chi\textsuperscript{2} (1)  = 0.0068; p  = 0.934}). In this case, abso-lutely no difference between depletion and non-depletion group emerged. In both groups 93\% opted for low risk and 7\% for high risk.

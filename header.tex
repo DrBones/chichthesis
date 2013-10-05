@@ -12,6 +12,10 @@
 \usepackage[utf8]{inputenc} %allows input of utf8 characters
 % \usepackage[british]{babel}
 \usepackage[T1]{fontenc} %more complete but lower quality than ComMod fontpacke
+\usepackage{floatrow}
+% Table float box with bottom caption, box width adjusted to content
+\newfloatcommand{capbtabbox}{table}[][200pt]
+\newfloatcommand{capbfigbox}{figure}[][\FBwidth]
 % \usepackage{ae,aecompl}
 \usepackage[tbtags]{mathtools}
 \usepackage[
@@ -44,6 +48,8 @@ date=short,                % Datumsformat
 \definecolor{riskdarkgrey}{HTML}{616161}
 \definecolor{likingcyan}{HTML}{94CEDE}
 \definecolor{riskred}{HTML}{C1504D}
+\definecolor{depletionred}{HTML}{A84A44}
+\definecolor{nondepletiongreen}{HTML}{89A24C}
 \usepackage{todonotes}
 \usepackage{booktabs}
 \usepackage{url}
@@ -178,7 +184,7 @@ date=short,                % Datumsformat
 \def\arraystretch{1.2}
 %\usepackage{ifthen}
 %\usepackage[dvips]{graphicx}
-\usepackage[margin=10pt]{subfig} 		%enabled the use of subfloats within a float
+\usepackage[margin=10pt,lofdepth,lotdepth]{subfig} 		%enabled the use of subfloats within a float
 \usepackage[capitalize]{cleveref}
 \crefname{table}{Tab.}{Tabs.}
 \crefname{dfn}{Def.}{Defs.}
@@ -311,3 +317,53 @@ date=short,                % Datumsformat
 % ***********************************************************
 % ********************** END HEADER *************************
 % ***********************************************************
+
+% *****************Pretty Help Lines**************
+% use like: \begin{tikzpicture}
+%           \draw (-2,-2) to[grid with coordinates] (7,4);
+%           \end{tikzpicture} 
+\makeatletter
+\def\grd@save@target#1{%
+  \def\grd@target{#1}}
+\def\grd@save@start#1{%
+  \def\grd@start{#1}}
+\tikzset{
+  grid with coordinates/.style={
+    to path={%
+      \pgfextra{%
+        \edef\grd@@target{(\tikztotarget)}%
+        \tikz@scan@one@point\grd@save@target\grd@@target\relax
+        \edef\grd@@start{(\tikztostart)}%
+        \tikz@scan@one@point\grd@save@start\grd@@start\relax
+        \draw[minor help lines, opacity=0.5] (\tikztostart) grid (\tikztotarget);
+        \draw[major help lines, line width=1pt, opacity=0.5] (\tikztostart) grid (\tikztotarget);
+        \grd@start
+        \pgfmathsetmacro{\grd@xa}{\the\pgf@x/1cm}
+        \pgfmathsetmacro{\grd@ya}{\the\pgf@y/1cm}
+        \grd@target
+        \pgfmathsetmacro{\grd@xb}{\the\pgf@x/1cm}
+        \pgfmathsetmacro{\grd@yb}{\the\pgf@y/1cm}
+        \pgfmathsetmacro{\grd@xc}{\grd@xa + \pgfkeysvalueof{/tikz/grid with coordinates/major step}}
+        \pgfmathsetmacro{\grd@yc}{\grd@ya + \pgfkeysvalueof{/tikz/grid with coordinates/major step}}
+        \foreach \x in {\grd@xa,\grd@xc,...,\grd@xb}
+        \node[anchor=north, opacity=0.7] at (\x,\grd@ya) {\pgfmathprintnumber{\x}};
+        \foreach \y in {\grd@ya,\grd@yc,...,\grd@yb}
+        \node[anchor=east, opacity=0.7] at (\grd@xa,\y) {\pgfmathprintnumber{\y}};
+      }
+    }
+  },
+  minor help lines/.style={
+    help lines,
+    step=\pgfkeysvalueof{/tikz/grid with coordinates/minor step}
+  },
+  major help lines/.style={
+    help lines,
+    line width=\pgfkeysvalueof{/tikz/grid with coordinates/major line width},
+    step=\pgfkeysvalueof{/tikz/grid with coordinates/major step}
+  },
+  grid with coordinates/.cd,
+  minor step/.initial=.2,
+  major step/.initial=1,
+  major line width/.initial=2pt,
+}
+\makeatother

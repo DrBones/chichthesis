@@ -39,6 +39,11 @@ INPUT c:/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
 INPUT c:/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
 INPUT c:/texlive/2013/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT c:/texlive/2013/texmf-dist/tex/latex/floatrow/floatrow.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/floatrow/floatrow.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/rotating/rotating.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/mh/mathtools.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/mh/mathtools.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
@@ -230,8 +235,6 @@ INPUT c:/texlive/2013/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/titlesec/ttlps.def
 INPUT c:/texlive/2013/texmf-dist/tex/latex/titlesec/ttlps.def
-INPUT c:/texlive/2013/texmf-dist/tex/latex/float/float.sty
-INPUT c:/texlive/2013/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/tabu/tabu.sty
@@ -242,8 +245,6 @@ INPUT c:/texlive/2013/texmf-dist/tex/latex/subfig/subfig.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/subfig/subfig.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
-INPUT c:/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
-INPUT c:/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/cleveref/cleveref.sty
 INPUT c:/texlive/2013/texmf-dist/tex/latex/cleveref/cleveref.sty
 INPUT c:/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
@@ -270,6 +271,9 @@ INPUT c:/texlive/2013/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
+INPUT c:/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/floatrow/fr-subfig.sty
+INPUT c:/texlive/2013/texmf-dist/tex/latex/floatrow/fr-subfig.sty
 OUTPUT main.bcf
 INPUT main.bbl
 INPUT main.bbl
@@ -381,6 +385,13 @@ INPUT ./images/os_product_choice.png
 INPUT ./images/os_product_choice.png
 INPUT ./images/os_product_choice.png
 INPUT c:/texlive/2013/texmf-dist/fonts/tfm/jknappen/ec/ecti0800.tfm
+INPUT ./images/chart_sofa.png
+INPUT ./images/chart_sofa.png
+INPUT ./images/chart_sofa.png
+INPUT ./images/chart_sofa.png
+INPUT ./images/chart_sofa.png
+INPUT ./images/chart_sofa.png
+INPUT ./images/chart_sofa.png
 INPUT main.aux
 INPUT main.run.xml
 OUTPUT main.run.xml
