@@ -1,7 +1,7 @@
 # Fdb version 3
-["biber main"] 1381026051 "main.bcf" "main.bbl" "main" 1381027036
+["biber main"] 1381026051 "main.bcf" "main.bbl" "main" 1381027898
   "egodepletion.bib" 1380716817 80802 52e5578d26fad5f7c1c43a533900e4f1 ""
-  "main.bcf" 1381027035 95674 dd80feee6e3fdf54aedb5c1d0c83a657 ""
+  "main.bcf" 1381027897 95674 dd80feee6e3fdf54aedb5c1d0c83a657 ""
   (generated)
   "main.bbl"
   "main.blg"
@@ -211,7 +211,7 @@
   "main.out"
   "main.log"
   "main.dvi"
-["pdflatex"] 1381027028 "main.tex" "main.pdf" "main" 1381027036
+["pdflatex"] 1381027891 "main.tex" "main.pdf" "main" 1381027898
   "abstract.tex" 1380815437 727 9cf1ecb3482db626a4966b7cef8e1d2e ""
   "c:/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1379692372 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1379692562 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -243,6 +243,7 @@
   "c:/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1379692353 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1379692353 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1379692125 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1379692373 140176 d0f50dba675c56d445f84a32c1f93a79 ""
   "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1379692373 135942 aecb5af344df420d6ec421db27dedf62 ""
   "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1379692373 139826 3796482349bae544f13f54da58f9706d ""
   "c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb" 1379692373 135938 1a19ff976dd71ec9a67855cdbfd83710 ""
@@ -437,10 +438,10 @@
   "c:/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1379693699 1135367 347ebbf080e73bdcbc6045fc23163302 ""
   "c:/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1379693734 3823940 137194946d8476fc0d8e53b5d7786d08 ""
   "c:/texlive/2013/texmf.cnf" 1379693686 497 7277663fd190ea5a4fe922b182dc7be2 ""
-  "effectsofdepletion.tex" 1380934281 20788 822b0ffcbe6bdd6bf4ddd0c83eb7bf4b ""
+  "effectsofdepletion.tex" 1381027141 20805 90f2c7b62ecd3faf889dc2b916ce2a61 ""
   "egodepletioninanutshell.tex" 1380820002 4896 1988a46263c1bff4d74eed2962690189 ""
-  "generaldiscussion.tex" 1381027028 15346 b9744aac62322f854c7d7af4eb35e172 ""
-  "header.tex" 1381024191 14519 d40cf3df829232a9d3010d6b558af1ea ""
+  "generaldiscussion.tex" 1381027117 15363 57532299974236b063b3cdf581990984 ""
+  "header.tex" 1381027779 14521 4587728131b37c70b4cbe76c25eb7bb7 ""
   "images/JD_decisions_danziger.png" 1380823283 22141 6e5a68eb65ff18a0bc7b0ecff8f90547 ""
   "images/chart_JD1.png" 1380941515 38221 b6e10195b82606649dfd4ad3542fd2a9 ""
   "images/chart_car.png" 1380941522 35344 2f008278f0367c81a960ba1fa6afaec6 ""
@@ -466,13 +467,13 @@
   "images/pretest_sofa.png" 1380834972 32469 1c3fa80aa41d0c680ba2e8c3b95ba2ac ""
   "images/pretest_wine.png" 1380834980 35291 bca437c40296ba39e9e05db8394a661d ""
   "images/twostreams.png" 1380478659 40859 b9d25fa6dcedb3306cb6103831a961a9 ""
-  "main.aux" 1381027035 44557 7ba076f8ad9e8976c479a3de85ddc3c6 ""
+  "main.aux" 1381027897 44314 78804223f635605b95891e5aba43d5aa ""
   "main.bbl" 1381026054 57710 66293c6b66ec24693f1274a8b3206c86 "biber main"
-  "main.run.xml" 1381027035 2313 27c549246874ac36cbaf9825c9aca981 ""
+  "main.run.xml" 1381027897 2313 27c549246874ac36cbaf9825c9aca981 ""
   "main.tex" 1381025362 1372 04c744f2e812612278e36d259e02418f ""
-  "main.toc" 1381027035 3739 b69981848705f8af836cc2ea9753d7f9 ""
-  "method.tex" 1381013271 34376 54117c09b3b3d6bd15fcc174b78958ae ""
-  "results.tex" 1381025797 54394 9c33353be29c1155409e929c2a66ae6a ""
+  "main.toc" 1381027897 3739 23524429a514b3f3e13a1dbdf9debcdd ""
+  "method.tex" 1381027130 34393 7007259740d93794a799fae3e4766d78 ""
+  "results.tex" 1381027875 57923 87e82b55c9a99688014a0882489cd9f1 ""
   (generated)
   "main.bcf"
   "egodepletioninanutshell.aux"

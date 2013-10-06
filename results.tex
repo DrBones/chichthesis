@@ -106,38 +106,51 @@ To check if the many different statistical variables of the questionnaire on sel
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+	\begin{tabu} spread 20pt {l c c c c}\toprule
+        Variable &  Factor1 & Factor2 & Factor3 &  Uniqueness \\ \midrule
+    
+            GSC1 &  \textbf{0.6615} & -0.0027  &  0.0784 &      0.5562 \\ 
+            GSC2 &   \textbf{0.6910} & 0.2886   & -0.0314 &      0.4382 \\ 
+            GSC3 &   0.2396  & \textbf{0.5489}  &  0.0095 &      0.6412 \\ 
+            GSC4 &   0.1106  & \textbf{0.3121}  &  0.1659 &      0.8629 \\ 
+            GSC5 &   \textbf{0.2854}  &  0.0488  &  0.0397 &      0.9146 \\ \bottomrule
+    
 	\end{tabu}}\\
-	\caption{Results of the orthogonal rotated factor loadings for the General Self-Control scale. Highest factor loading in bold displayed.}
-	\label{tab:factorloading}
+	\caption{Results of the orthogonal rotated factor loadings (General Self-Control). Highest factor loading in bold displayed.}
+	\label{tab:factorloading_gsc}
 \end{table}
+\begin{table}[!ht]
+	\centering
+	\setlength{\tabcolsep}{1.2em}{
+	\begin{tabu} spread 20pt {X[l] X[0.5,l] X[0.2,c] X[2.7,c] X[2.7,c] X[3,c] X[c] }\toprule                                    
+Item         &  Obs & Sign &  item-test correlation &  item-rest correlation & average interitem covariance & alpha \\ \midrule
+GSC1        &   86  &  +  &    0.6145  &   0.3862  &  .2030096 &  0.4629 \\
+GSC2        &   86  &  +  &    0.7204  &   0.5011  &   .148404 &  0.3854 \\
+GSC3        &   86  &  +  &    0.6068  &   0.3379  &  .2064067 &  0.4827 \\
+GSC4        &   86  &  +  &    0.5148  &   0.1981  &  .2584587 &  0.5635 \\
+GSC5        &   86  &  +  &    0.5695  &   0.2076  &  .2428865 &  0.5738  \\ \midrule
+Test scale  &       &     &            &           &  .2118331 &  0.5521 \\ \bottomrule
+
+	\end{tabu}}\\
+	\caption{Result of Cronbachs alpha analysis (General Self-Control). Result displays the item-test correlation, item-rest correlation, the average interitem covariance and the alpha value.}
+	\label{tab:cronbachalpha_gsc}
+\end{table}
+Table \ref{tab:scoregsc} shows a comparison of the mean (score GSC) between the depletion and the non-depletion group. As the factor analysis did not produce the desired results, a two-sample t-test with equal variances of each item of the General Self-Control Scale had to be performed, again, this was done to ensure that there was no difference between the groups, which might act as an interfering variable. As expected, this procedure did not produce any evidence that the experimental group and the control group differed significantly in their means (\res{t = -0.21; -1.50; -1.54; -1.53; -0.42; df = 84; $\alpha$ < 0.05}) (see Table \ref{tab:scoregsc}). 
 
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
-	\end{tabu}}\\
-	\caption{Result of Cronbachs alpha analysis for the General Self-Control scale. Result displays the item-test correlation, item-rest correlation, the average interitem covariance and the alpha value.}
-	\label{tab:cronbachalpha}
-\end{table}
-Table \ref{tab:scoregsc}shows a comparison of the mean (score GSC) between the depletion and the non-depletion group. As the factor analysis did not produce the desired results, a two-sample t-test with equal variances of each item of the General Self-Control Scale had to be performed, again, this was done to ensure that there was no difference between the groups, which might act as an interfering variable. As expected, this procedure did not produce any evidence that the experimental group and the control group differed significantly in their means (\res{t = -0.21; -1.50; -1.54; -1.53; -0.42; df = 84; $\alpha$ < 0.05}) (see Table \ref{tab:scoregsc}). 
+	\begin{tabu} to 440pt {X[2.2,l] X[c] X[c] X[c] X[c] X[2.5,c] X[5,c] }\toprule                                    
+Item        &  M (depl) & M (non-depl) &  SD (depl)	 &  SD (non-depl) &   Two tailed p-value & t (df)\\ \midrule
 
-\begin{table}[!ht]
-	\centering
-	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+GSC1 &	4.667 &	4.625	& 0.758	& 0.945	 & 0.84	& t(df =84)= -0.21 \\ 
+GSC2 &	3.100 & 2.768	& 1.062	& 0.934	 & 0.14	& t(df =84)= -1.50 \\
+GSC3 &	3.434 &	3.089	& 1.006	& 0.978	 & 0.13	& t(df =84)= -1.54 \\
+GSC4 &	3.667 &	3.304	& 0.959	& 1.094	 & 0.13	& t(df =84)= -1.53 \\
+GSC5 &	4.634 &	4.518	& 0.217	& 0.167	 & 0.68	& t(df =84)= -0.42 \\ \bottomrule
 	\end{tabu}}\\
-	\caption{Summary of the General Self-Control results of  the two-sample t-test with equal variances. The table displays the means and the standard deviation of the depletion and the non-depletion group and the two-tailed p-value, t-value and the degrees of freedom.}
-	\label{tab:scoregsc}
+	\caption{Summary of the General Self-Control results of the two-sample t-test with equal variances. The table displays the means and the standard deviation of the depletion and the non-depletion group and the two-tailed p-value, t-value and the degrees of freedom.}
+	\label{tab:ttest_scoregsc}
 \end{table}
 
 \subsection{Exploratoy Tendencies in Consumer Behaviour}
@@ -146,36 +159,45 @@ Table \ref{tab:exploratoryscale} shows the itmes of the Exploratory Tendencies i
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+	\begin{tabu} to 440pt {X[0.2l] X[l]}\toprule
+	     Item &	Item - Statement \\ \midrule
+	CBS1	& I often delay taking action until I have carefully considered the consequences of my purchase decisions.\\
+	CBS2	& I am responsible when it comes to how much I spend.\\
+	CBS3	& When I go out with my friends, I keep track of what I am spending.\\
+	CBS4	& I closely monitor my spending behavior.\\ \bottomrule
 	\end{tabu}}\\
-	\caption{Exploratory Tendencies in Consumer Behaviour Scale General and the corresponding statements.}
-	\label{tab:exploratoryscale}
+	\caption{Exploratory Tendencies in Consumer Behaviour items and the corresponding statements.}
+	\label{tab:cbs_scale}
 \end{table}
 To check if the many different statistical variables of the questionnaire on consumer behaviour, underly a few latent variables, a factor analysis using a varimax rotation was performed. Table 11 displays the factor loadings, indicating the relation among the CBS items. While Items 1, 3 and 4 loaded on the first factor, Item 2 loaded on the second factor. Cronbach’s alpha was also assessed ($\alpha$\res{ = 0.30}) and did not reveal any internal consistency of the CBS (see Table \ref{tab:cronbach_alpha_cbs}). Again, consistent with the findings on the GSC, it appears that the items of the CBS should not be merged into one latent variable, as was expected following the original data (see \cite{raju1980optimum}). Again, it is possible that the reduction of questionnaire, which originally contained 39 items, might have led to these results. This will be discussed at a later point.
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+	\begin{tabu} spread 20pt {l c c c }\toprule
+        Variable &  Factor1 & Factor2 & Uniqueness \\ \midrule
+            CBS1 &   0.0218 &   \textbf{0.1991} &   0.9599 \\ 
+            CBS2 &  -0.5448 &  \textbf{-0.0241} &   0.7026 \\ 
+            CBS3 &   \textbf{0.3090} &  -0.0308 &   0.9036 \\ 
+            CBS4 &   \textbf{0.4515} &  -0.0614 &   0.7923   \\ \bottomrule
+
 	\end{tabu}}\\
-	\caption{Results of the orthogonal rotated factor loadings for the Exploratory Tendencies on Consumer Behaviour scale. Highest factor loading in bold displayed.}
+	\caption{Results of the orthogonal rotated factor loadings (CBS). Highest factor loading in bold displayed.}
 	\label{tab:rotated_factor_cbs}
 \end{table}
-
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+	\begin{tabu} spread 20pt {X[l] X[0.5,l] X[0.2,c] X[2.7,c] X[2.7,c] X[3,c] X[c] }\toprule                                    
+Item         &  Obs & Sign &  item-test correlation &  item-rest correlation & average interitem covariance & alpha \\ \midrule
+
+CBS1         &  86 &   +  &   0.4958  &   -0.0069  &    .655586  & 0.4539\\
+CBS2         &  86 &   -  &   0.6768  &    0.3669  &  -.0063383  &      .\\
+CBS3         &  86 &   +  &   0.5425  &    0.1342  &   .3580027  & 0.2601\\
+CBS4         &  86 &   +  &   0.5854  &    0.1775  &   .2692658  & 0.2072\\ \midrule
+Test scale   &     &      &           &            &    .319129  & 0.2962\\ \bottomrule
+
 	\end{tabu}}\\
-	\caption{Result of Cronbach’s alpha analysis for the Exploratory Tendencies of Consumer Behaviour scale. Result displays the item-test correlation, item-rest correlation, the average interitem covariance and the alpha value.}
+	\caption{Result of Cronbach’s alpha analysis (CBS). Result displays the item-test correlation, item-rest correlation, the average interitem covariance and the alpha value.}
 	\label{tab:cronbach_alpha_cbs}
 \end{table}
 
@@ -184,10 +206,14 @@ Table \ref{tab:mean_comparison} shows a comparison of the mean (score CBS) betwe
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+	\begin{tabu} to 440pt {X[2.2,l] X[c] X[c] X[c] X[c] X[2.5,c] X[5,c] }\toprule                                    
+Item        &  M (depl) & M (non-depl) &  SD (depl)	 &  SD (non-depl) &   Two tailed p-value & t (df)\\ \midrule
+
+CBS1 &	3.634 &	3.304	& 1.991 &2.140	& 0.49	& t(df =84)= -0.70 \\
+CBS2 &	4.100 &	4.286	& 1.668 &1.581	& 0.61	& t(df =84)=  0.51 \\
+CBS3 &	3.334 &	3.661	& 1.826 &1.761	& 0.42	& t(df =84)=  0.81 \\
+CBS4 &	4.900 &	4.571	& 1.845 &1.818	& 0.43	& t(df =84)= -0.80 \\ \bottomrule
+
 	\end{tabu}}\\
 	\caption{Summary of the Exploratory Tendencies of Consumer Behaviour results of the two-sample t-test with equal variances. The table displays the means and the standard deviation of the depletion and the non-depletion group and the two tailed p-value, t-value and the degrees of freedom.}
 	\label{tab:mean_comparison}
@@ -200,40 +226,48 @@ Table \ref{tab:consumerspendingselfcontrol} depicts the items of the Consumer Sp
 	\centering
 	\setlength{\tabcolsep}{1em}{
 	\begin{tabu} to \textwidth {X[l] X[2.8,l]}\toprule
-	Consumer Spending Self-Control	&Item - Statement\\ \midrule
+	Item	&Item - Statement\\ \midrule
 SSC1&	Even though certain food products are available in a number of different flavors, I always tend to buy the same flavor.\\
 SSC2&	When I see a new brand somewhat different from the usual, I investigate it.\\
 SSC3&	A new store or restaurant is not something I would be eager to find out about.\\
 SSC4&	When I see a new or different brand on the shelf, I often pick it up just to see what it is like.\\ \bottomrule
 	\end{tabu}}\\
-	\caption{Consumer Spending Self-Control and the corresponding statements.}
+	\caption{Consumer Spending Self-Control items and the corresponding statements.}
 	\label{tab:consumerspendingselfcontrol}}
 \end{table}
 To check if many different statistical variables of the questionnaire on consumer spending, underly a few latent variables, a factor analysis using a varimax rotation was performed. Table \ref{tab:rotated_factor_loading_consumer_spending_selfcontrol} displays the factor loadings, indicating the relation among the CSSC items. This time, all items loaded on a single factor. Cronbach’s alpha was also assessed (\res{$\alpha$ = 0.80}) confirming a significant internal consistency of the SSC items (see Table \ref{tab:cronbach_alpha_consumer_spending_self_control_scale}). 
-
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+	\begin{tabu} spread 20pt {l c c }\toprule
+     
+     Variable &  Factor1 & Uniqueness \\ \midrule
+            SSC1 &  0.6289 &  0.6045\\
+            SSC2 &  0.7283 &  0.4695\\
+            SSC3 &  0.6579 &  0.5672\\
+            SSC4 &  0.7537 &  0.4319\\ \bottomrule
+   
+
 	\end{tabu}}\\
-	\caption{Results of the orthogonal rotated factor loadings for the Consumer Spending Self-Control. Highest factor load-ing in bold displayed.}
-	\label{tab:rotated_factor_loading_consumer_spending_selfcontrol}
+	\caption{Results of the orthogonal rotated factor loadings (SSC).}
+	\label{tab:items_Exploratory_Tendencies_Consumer_Behaviour}
 \end{table}
-
 \begin{table}[!ht]
 	\centering
 	\setlength{\tabcolsep}{1.2em}{
-	\begin{tabu} spread 20pt {l l}\toprule
-	TEST&	TEST\\ \midrule
-	TEST&	TEST\\
-	TEST&	TEST\\ \bottomrule
+	\begin{tabu} spread 20pt {X[l] X[0.5,l] X[0.2,c] X[2.7,c] X[2.7,c] X[3,c] X[c] }\toprule                                    
+Item         &  Obs & Sign &  item-test correlation &  item-rest correlation & average interitem covariance & alpha \\ \midrule
+SSC1         &  86 &   +  &     0.7497 &   0.5587  &   .6159143 &  0.7803\\
+SSC2         &  86 &   +  &     0.8302 &   0.6573  &     .49772 &  0.7338\\
+SSC3         &  86 &   +  &     0.7649 &   0.5791  &   .5966712 &  0.7711\\
+SSC4         &  86 &   +  &     0.8261 &   0.6794  &    .529275 &  0.7238\\ \midrule
+Test scale   &     &      &            &           &   .5598951 &  0.8029\\ \bottomrule
+
 	\end{tabu}}\\
-	\caption{Result of Cronbach’s alpha analysis for the Consumer Spending Self-Control scale. Result displays the item-test correlation, item-rest correlation, the average interitem covariance and the alpha value.}
+	\caption{Result of Cronbach’s alpha analysis (SSC). Result displays the item-test correlation, item-rest correlation, the average interitem covariance and the alpha value.}
 	\label{tab:cronbach_alpha_consumer_spending_self_control_scale}
 \end{table}
+
 With the satisfactory results of preceding tests at hand all items of the SSC were merged into one variable and a two-sample t-test with equal variances was performed, comparing the mean (score SSC) of the depletion and the non-depletion group. 
 
 \begin{table}[!ht]
