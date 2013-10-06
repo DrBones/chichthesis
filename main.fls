@@ -462,12 +462,16 @@ INPUT ./images/chart_se_exhaustion.png
 INPUT ./images/chart_se_difficulty.png
 INPUT ./images/chart_se_difficulty.png
 INPUT ./images/chart_se_difficulty.png
+INPUT generaldiscussion.tex
+INPUT generaldiscussion.tex
+INPUT ./images/pretest_scale.png
+INPUT ./images/pretest_scale.png
+INPUT ./images/pretest_scale.png
 INPUT main.aux
 INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT c:/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT c:/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
 INPUT c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
 INPUT c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
 INPUT c:/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb
