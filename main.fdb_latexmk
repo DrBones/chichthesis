@@ -1,7 +1,7 @@
 # Fdb version 3
-["biber main"] 1381082701 "main.bcf" "main.bbl" "main" 1381083307
+["biber main"] 1381082701 "main.bcf" "main.bbl" "main" 1381092633
   "egodepletion.bib" 1380716817 80802 52e5578d26fad5f7c1c43a533900e4f1 ""
-  "main.bcf" 1381083306 95674 dd80feee6e3fdf54aedb5c1d0c83a657 ""
+  "main.bcf" 1381092633 95674 dd80feee6e3fdf54aedb5c1d0c83a657 ""
   (generated)
   "main.bbl"
   "main.blg"
@@ -211,7 +211,7 @@
   "main.out"
   "main.log"
   "main.dvi"
-["pdflatex"] 1381083299 "main.tex" "main.pdf" "main" 1381083307
+["pdflatex"] 1381092625 "main.tex" "main.pdf" "main" 1381092633
   "abstract.tex" 1381077564 724 b1261b1432b27b7c0eaea8088cee8a91 ""
   "c:/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1379692372 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1379692562 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -443,8 +443,8 @@
   "effectsofdepletion.tex" 1381077376 20803 53fcfe69674d5b03e1ddafd61d2810b6 ""
   "egodepletioninanutshell.tex" 1381077376 4899 9ead90431c7c536d1d113407e3257813 ""
   "generaldiscussion.tex" 1381072637 15537 13f5ac9d360264bcc57b5ed863e4b72f ""
-  "header.tex" 1381075433 14569 185a6ff82e16de8a2bf054bd5b0240c3 ""
-  "images/JD_decisions_danziger.png" 1380823283 22141 6e5a68eb65ff18a0bc7b0ecff8f90547 ""
+  "header.tex" 1381088605 14641 ef7e411143dc25645ff4d265ff390e4a ""
+  "images/PNAS-2011-Danziger-6889-92.pdf" 1381071818 612565 839c1f86badcb10e5c9c1ca54166f8e1 ""
   "images/Pretest4.3.pdf" 1381071796 608342 f205a6251368e72a1676e0b9bdad4844 ""
   "images/chart_JD1.png" 1380941515 38221 b6e10195b82606649dfd4ad3542fd2a9 ""
   "images/chart_car.png" 1380941522 35344 2f008278f0367c81a960ba1fa6afaec6 ""
@@ -468,12 +468,12 @@
   "images/pretest_sofa.png" 1380834972 32469 1c3fa80aa41d0c680ba2e8c3b95ba2ac ""
   "images/pretest_wine.png" 1380834980 35291 bca437c40296ba39e9e05db8394a661d ""
   "images/twostreams.png" 1380478659 40859 b9d25fa6dcedb3306cb6103831a961a9 ""
-  "main.aux" 1381083306 44184 0a2c293ceb968ec671cae31bf4da5a59 ""
+  "main.aux" 1381092633 44237 71e3a5fc5c9d2658063c3e34ed7ba14a ""
   "main.bbl" 1381082703 57710 66293c6b66ec24693f1274a8b3206c86 "biber main"
-  "main.run.xml" 1381083306 2313 27c549246874ac36cbaf9825c9aca981 ""
+  "main.run.xml" 1381092633 2313 27c549246874ac36cbaf9825c9aca981 ""
   "main.tex" 1381077376 1405 5ef118ed9c3b474cd9050f3826ed4790 ""
-  "main.toc" 1381083306 3932 7d50e4222278ecfc111740c1484b4969 ""
-  "method.tex" 1381083298 35324 05e6b390b3e4c78f7cfb80103e93fe16 ""
+  "main.toc" 1381092633 3932 ff3c761ad28caf1ddcdb23602c23dbe0 ""
+  "method.tex" 1381092624 36958 4cf0a4fc586bcefe1ea34b1bf0ae2a93 ""
   "results.tex" 1381077040 57443 0cc765347abefab6abc48906290c481f ""
   (generated)
   "main.bcf"

@@ -373,7 +373,6 @@ INPUT ./images/pretest_wine.png
 INPUT ./images/pretest_judges.png
 INPUT ./images/pretest_judges.png
 INPUT ./images/pretest_judges.png
-INPUT ./images/pretest_judges.png
 INPUT ./images/os_green.png
 INPUT ./images/os_green.png
 INPUT ./images/os_green.png
@@ -384,10 +383,10 @@ INPUT ./images/pretest_sample.png
 INPUT ./images/pretest_sample.png
 INPUT ./images/pretest_sample.png
 INPUT ./images/pretest_sample.png
-INPUT ./images/JD_decisions_danziger.png
-INPUT ./images/JD_decisions_danziger.png
-INPUT ./images/JD_decisions_danziger.png
-INPUT ./images/JD_decisions_danziger.png
+INPUT ./images/PNAS-2011-Danziger-6889-92.pdf
+INPUT ./images/PNAS-2011-Danziger-6889-92.pdf
+INPUT ./images/PNAS-2011-Danziger-6889-92.pdf
+INPUT ./images/PNAS-2011-Danziger-6889-92.pdf
 INPUT ./images/os_depletion_measure.png
 INPUT ./images/os_depletion_measure.png
 INPUT ./images/os_depletion_measure.png
