@@ -14,7 +14,7 @@
 \usepackage[T1]{fontenc} %more complete but lower quality than ComMod fontpacke
 \usepackage{floatrow}
 % Table float box with bottom caption, box width adjusted to content
-\newfloatcommand{capbtabbox}{table}[][204pt]
+\newfloatcommand{capbtabbox}{table}[][206pt]
 \newfloatcommand{capbfigbox}{figure}[][\FBwidth]
 % \usepackage{ae,aecompl}
 \usepackage[tbtags]{mathtools}
@@ -58,6 +58,7 @@ date=short,                % Datumsformat
 \usepackage{chngcntr}
 % \usepackage{dsfont}%supplies 1 and lowercase k in blackboard bold
 \usepackage{tikz}
+\usepackage{calc}
 % \newcommand{\axes}{\draw[style={<->,thin}] (-1,0.65) node[left,align=center] {$x$} -- (0,0) --  (1,0.65) node[right] {$y$};}
 % \newcommand{\curveoutline}{
 % \draw[lightgray] (-0.85,6) .. controls (-0.9,1.75) and (0.7,1.7) .. (1.23,1.35);
@@ -260,7 +261,7 @@ date=short,                % Datumsformat
 
 % configure subfig
 %\usepackage[small,bf]{caption}
-\usepackage{caption}
+\usepackage[format=plain,indention=.2cm]{caption}
 \captionsetup[subfloat]{position=top,labelformat=simple,listofformat=subsimple,singlelinecheck=false}
 \def\thesubfigure{(\alph{subfigure})} 
 %
