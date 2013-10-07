@@ -21,6 +21,7 @@
 \usepackage[export]{adjustbox}
 \usepackage[
 backend=biber, 
+bibencoding=latin1,
 style=authoryear,    % Zitierstil
 isbn=false,                % ISBN nicht anzeigen, gleiches geht mit nahezu allen anderen Feldern
 pagetracker=true,          % ebd. bei wiederholten Angaben (false=ausgeschaltet, page=Seite, spread=Doppelseite, true=automatisch)
@@ -32,7 +33,7 @@ backref=true,              % Seiten anzeigen, auf denen die Referenz vorkommt
 backrefstyle=three+,       % fasst Seiten zusammen, z.B. S. 2f, 6ff, 7-10
 date=short,                % Datumsformat
 ]{biblatex}
-\addbibresource{egodepletion.bib}
+\addbibresource{ego_depletion_final_latin.bib}
 \renewcommand*{\nameyeardelim}{\addcomma\addspace}
 \let\citep\parencite
 \let\res\emph
@@ -48,7 +49,9 @@ date=short,                % Datumsformat
 \definecolor{likinggrey}{HTML}{B4B4B4}
 \definecolor{riskdarkgrey}{HTML}{616161}
 \definecolor{likingcyan}{HTML}{94CEDE}
+\definecolor{likingcyan2}{HTML}{98D9E6}
 \definecolor{riskred}{HTML}{C1504D}
+\definecolor{riskred2}{HTML}{DB5758}
 \definecolor{depletionred}{HTML}{A84A44}
 \definecolor{nondepletiongreen}{HTML}{89A24C}
 \definecolor{nored}{HTML}{E76B69}
@@ -58,6 +61,7 @@ date=short,                % Datumsformat
 \usepackage{url}
 \usepackage{grffile}
 \usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
 % \usepackage{dsfont}%supplies 1 and lowercase k in blackboard bold
 \usepackage{tikz}
 \usepackage{calc}
@@ -113,7 +117,9 @@ date=short,                % Datumsformat
 % \floatstyle{plain}
 % \newfloat{algo}{thp}{lop}[chapter]
 % \floatname{algo}{Algorithm}
-
+\defbibheading{bibliography}[\bibname]{%
+  \chapter*{#1}%
+}
 % Page setup (titlesec)
 \titleformat{\chapter}[hang]
 {\normalfont\huge\bfseries}{\thechapter}{20pt}{\Huge}
@@ -131,7 +137,7 @@ date=short,                % Datumsformat
 }
 \newpagestyle{bib}{%
   \headrule
-  \sethead[\chaptertitle][][]{}{}{\chaptertitle}
+  \sethead[Bibliography][][]{}{}{Bibliography}
   % \footrule
 \renewcommand{\makefootrule}{%
   % \makebox[0pt][l]{\rule[.7\baselineskip]{\linewidth}{0.8pt}}%

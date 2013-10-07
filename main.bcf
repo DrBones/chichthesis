@@ -8,7 +8,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>input_encoding</bcf:key>
-      <bcf:value>utf8</bcf:value>
+      <bcf:value>latin1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>debug</bcf:key>
@@ -1956,101 +1956,132 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">egodepletion.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">ego_depletion_final_latin.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">toennemann2008</bcf:citekey>
-    <bcf:citekey order="2">baumeister2002yielding</bcf:citekey>
-    <bcf:citekey order="3">greifeneder2010less</bcf:citekey>
-    <bcf:citekey order="3">levav2010order</bcf:citekey>
-    <bcf:citekey order="4">danziger2011extraneous</bcf:citekey>
-    <bcf:citekey order="5">baumeister1998ego</bcf:citekey>
-    <bcf:citekey order="6">muraven1998self</bcf:citekey>
-    <bcf:citekey order="7">vohs2000self</bcf:citekey>
+    <bcf:citekey order="1">theclash</bcf:citekey>
+    <bcf:citekey order="2">toennemann2008</bcf:citekey>
+    <bcf:citekey order="3">baumeister2002yielding</bcf:citekey>
+    <bcf:citekey order="4">greifeneder2010less</bcf:citekey>
+    <bcf:citekey order="4">levav2010order</bcf:citekey>
+    <bcf:citekey order="5">danziger2011extraneous</bcf:citekey>
+    <bcf:citekey order="6">baumeister1998ego</bcf:citekey>
+    <bcf:citekey order="7">muraven1998self</bcf:citekey>
     <bcf:citekey order="8">vohs2000self</bcf:citekey>
-    <bcf:citekey order="9">baumeister1998ego</bcf:citekey>
-    <bcf:citekey order="10">ross1975perceived</bcf:citekey>
-    <bcf:citekey order="11">brody1968personality</bcf:citekey>
-    <bcf:citekey order="12">baumeister1998ego</bcf:citekey>
+    <bcf:citekey order="9">vohs2000self</bcf:citekey>
+    <bcf:citekey order="10">baumeister1998ego</bcf:citekey>
+    <bcf:citekey order="11">ross1975perceived</bcf:citekey>
+    <bcf:citekey order="12">brody1968personality</bcf:citekey>
     <bcf:citekey order="13">baumeister1998ego</bcf:citekey>
     <bcf:citekey order="14">baumeister1998ego</bcf:citekey>
-    <bcf:citekey order="15">muraven1998self</bcf:citekey>
-    <bcf:citekey order="16">muraven2000self</bcf:citekey>
+    <bcf:citekey order="15">baumeister1998ego</bcf:citekey>
+    <bcf:citekey order="16">muraven1998self</bcf:citekey>
     <bcf:citekey order="17">muraven2000self</bcf:citekey>
     <bcf:citekey order="18">muraven2000self</bcf:citekey>
     <bcf:citekey order="19">muraven2000self</bcf:citekey>
     <bcf:citekey order="20">muraven2000self</bcf:citekey>
     <bcf:citekey order="21">muraven2000self</bcf:citekey>
-    <bcf:citekey order="22">mischel1996good</bcf:citekey>
-    <bcf:citekey order="22">gross1998emerging</bcf:citekey>
-    <bcf:citekey order="22">vohs2000self</bcf:citekey>
-    <bcf:citekey order="23">baumeister2002yielding</bcf:citekey>
-    <bcf:citekey order="24">vohs2000self</bcf:citekey>
-    <bcf:citekey order="25">pocheptsova2009deciding</bcf:citekey>
-    <bcf:citekey order="26">baumeister2012self</bcf:citekey>
-    <bcf:citekey order="27">baumeister2002yielding</bcf:citekey>
+    <bcf:citekey order="22">muraven2000self</bcf:citekey>
+    <bcf:citekey order="23">mischel1996good</bcf:citekey>
+    <bcf:citekey order="23">gross1998emerging</bcf:citekey>
+    <bcf:citekey order="23">vohs2000self</bcf:citekey>
+    <bcf:citekey order="24">baumeister2002yielding</bcf:citekey>
+    <bcf:citekey order="25">vohs2000self</bcf:citekey>
+    <bcf:citekey order="26">pocheptsova2009deciding</bcf:citekey>
     <bcf:citekey order="27">baumeister2012self</bcf:citekey>
-    <bcf:citekey order="28">baumeister2007strength</bcf:citekey>
-    <bcf:citekey order="29">vohs2008making</bcf:citekey>
-    <bcf:citekey order="29">vohs2007spent</bcf:citekey>
-    <bcf:citekey order="29">unger2011ego</bcf:citekey>
-    <bcf:citekey order="30">baumeister2002yielding</bcf:citekey>
-    <bcf:citekey order="31">weber2002domain</bcf:citekey>
+    <bcf:citekey order="28">baumeister2002yielding</bcf:citekey>
+    <bcf:citekey order="28">baumeister2012self</bcf:citekey>
+    <bcf:citekey order="29">baumeister2007strength</bcf:citekey>
+    <bcf:citekey order="30">vohs2008making</bcf:citekey>
+    <bcf:citekey order="30">vohs2007spent</bcf:citekey>
+    <bcf:citekey order="30">unger2011ego</bcf:citekey>
+    <bcf:citekey order="31">baumeister2002yielding</bcf:citekey>
     <bcf:citekey order="32">weber2002domain</bcf:citekey>
-    <bcf:citekey order="33">ditto2006visceral</bcf:citekey>
-    <bcf:citekey order="34">bruyneel2009felt</bcf:citekey>
+    <bcf:citekey order="33">weber2002domain</bcf:citekey>
+    <bcf:citekey order="34">ditto2006visceral</bcf:citekey>
     <bcf:citekey order="35">bruyneel2009felt</bcf:citekey>
     <bcf:citekey order="36">bruyneel2009felt</bcf:citekey>
-    <bcf:citekey order="37">pocheptsova2009deciding</bcf:citekey>
-    <bcf:citekey order="38">weber2002domain</bcf:citekey>
-    <bcf:citekey order="39">pocheptsova2009deciding</bcf:citekey>
+    <bcf:citekey order="37">bruyneel2009felt</bcf:citekey>
+    <bcf:citekey order="38">pocheptsova2009deciding</bcf:citekey>
+    <bcf:citekey order="39">weber2002domain</bcf:citekey>
     <bcf:citekey order="40">pocheptsova2009deciding</bcf:citekey>
     <bcf:citekey order="41">pocheptsova2009deciding</bcf:citekey>
     <bcf:citekey order="42">pocheptsova2009deciding</bcf:citekey>
     <bcf:citekey order="43">pocheptsova2009deciding</bcf:citekey>
     <bcf:citekey order="44">pocheptsova2009deciding</bcf:citekey>
     <bcf:citekey order="45">pocheptsova2009deciding</bcf:citekey>
-    <bcf:citekey order="46">unger2011ego</bcf:citekey>
-    <bcf:citekey order="47">knight1921risk</bcf:citekey>
-    <bcf:citekey order="48">dowling1994model</bcf:citekey>
-    <bcf:citekey order="49">bauer1960consumer</bcf:citekey>
-    <bcf:citekey order="50">ross1975perceived</bcf:citekey>
-    <bcf:citekey order="51">engel1973blackwell</bcf:citekey>
-    <bcf:citekey order="52">ross1975perceived</bcf:citekey>
-    <bcf:citekey order="53">dowling1994model</bcf:citekey>
-    <bcf:citekey order="54">taylor1974role</bcf:citekey>
-    <bcf:citekey order="55">unger2011ego</bcf:citekey>
+    <bcf:citekey order="46">pocheptsova2009deciding</bcf:citekey>
+    <bcf:citekey order="47">unger2011ego</bcf:citekey>
+    <bcf:citekey order="48">knight1921risk</bcf:citekey>
+    <bcf:citekey order="49">dowling1994model</bcf:citekey>
+    <bcf:citekey order="50">bauer1960consumer</bcf:citekey>
+    <bcf:citekey order="51">ross1975perceived</bcf:citekey>
+    <bcf:citekey order="52">engel1973blackwell</bcf:citekey>
+    <bcf:citekey order="53">ross1975perceived</bcf:citekey>
+    <bcf:citekey order="54">dowling1994model</bcf:citekey>
+    <bcf:citekey order="55">taylor1974role</bcf:citekey>
     <bcf:citekey order="56">unger2011ego</bcf:citekey>
     <bcf:citekey order="57">unger2011ego</bcf:citekey>
-    <bcf:citekey order="58">brody1968personality</bcf:citekey>
+    <bcf:citekey order="58">unger2011ego</bcf:citekey>
     <bcf:citekey order="59">brody1968personality</bcf:citekey>
     <bcf:citekey order="60">brody1968personality</bcf:citekey>
-    <bcf:citekey order="61">taylor1974role</bcf:citekey>
-    <bcf:citekey order="62">vohs2000self</bcf:citekey>
-    <bcf:citekey order="62">pocheptsova2009deciding</bcf:citekey>
-    <bcf:citekey order="62">bruyneel2009felt</bcf:citekey>
-    <bcf:citekey order="63">unger2011ego</bcf:citekey>
-    <bcf:citekey order="64">ross1975perceived</bcf:citekey>
-    <bcf:citekey order="64">dowling1994model</bcf:citekey>
-    <bcf:citekey order="65">muraven1998self</bcf:citekey>
-    <bcf:citekey order="65">baumeister2002yielding</bcf:citekey>
-    <bcf:citekey order="66">unger2011ego</bcf:citekey>
-    <bcf:citekey order="66">pocheptsova2009deciding</bcf:citekey>
-    <bcf:citekey order="67">stroop1935studies</bcf:citekey>
-    <bcf:citekey order="68">danziger2011extraneous</bcf:citekey>
+    <bcf:citekey order="61">brody1968personality</bcf:citekey>
+    <bcf:citekey order="62">taylor1974role</bcf:citekey>
+    <bcf:citekey order="63">vohs2000self</bcf:citekey>
+    <bcf:citekey order="63">pocheptsova2009deciding</bcf:citekey>
+    <bcf:citekey order="63">bruyneel2009felt</bcf:citekey>
+    <bcf:citekey order="64">unger2011ego</bcf:citekey>
+    <bcf:citekey order="65">ross1975perceived</bcf:citekey>
+    <bcf:citekey order="65">dowling1994model</bcf:citekey>
+    <bcf:citekey order="66">muraven1998self</bcf:citekey>
+    <bcf:citekey order="66">baumeister2002yielding</bcf:citekey>
+    <bcf:citekey order="67">unger2011ego</bcf:citekey>
+    <bcf:citekey order="67">pocheptsova2009deciding</bcf:citekey>
+    <bcf:citekey order="68">stroop1935studies</bcf:citekey>
     <bcf:citekey order="69">danziger2011extraneous</bcf:citekey>
     <bcf:citekey order="70">danziger2011extraneous</bcf:citekey>
     <bcf:citekey order="71">danziger2011extraneous</bcf:citekey>
     <bcf:citekey order="72">danziger2011extraneous</bcf:citekey>
-    <bcf:citekey order="73">tangney2004high</bcf:citekey>
-    <bcf:citekey order="74">raju1980optimum</bcf:citekey>
+    <bcf:citekey order="73">danziger2011extraneous</bcf:citekey>
+    <bcf:citekey order="74">tangney2004high</bcf:citekey>
     <bcf:citekey order="75">raju1980optimum</bcf:citekey>
     <bcf:citekey order="76">raju1980optimum</bcf:citekey>
-    <bcf:citekey order="77">haws2012consumer</bcf:citekey>
-    <bcf:citekey order="78">frederick2005cognitive</bcf:citekey>
-    <bcf:citekey order="79">raju1980optimum</bcf:citekey>
-    <bcf:citekey order="80">unger2011ego</bcf:citekey>
-    <bcf:citekey order="81">danziger2011extraneous</bcf:citekey>
-    <bcf:citekey order="82">pocheptsova2009deciding</bcf:citekey>
+    <bcf:citekey order="77">raju1980optimum</bcf:citekey>
+    <bcf:citekey order="78">haws2012consumer</bcf:citekey>
+    <bcf:citekey order="79">frederick2005cognitive</bcf:citekey>
+    <bcf:citekey order="80">raju1980optimum</bcf:citekey>
+    <bcf:citekey order="81">unger2011ego</bcf:citekey>
+    <bcf:citekey order="82">danziger2011extraneous</bcf:citekey>
+    <bcf:citekey order="83">pocheptsova2009deciding</bcf:citekey>
   </bcf:section>
+  <bcf:sortlist section="0" type="entry" label="nyt">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
 </bcf:controlfile>

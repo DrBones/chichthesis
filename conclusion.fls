@@ -1,6 +1,0 @@
-PWD C:/Users/jonas/Desktop/Chich Thesis
-INPUT c:/texlive/2013/texmf.cnf
-INPUT c:/texlive/2013/texmf-dist/web2c/texmf.cnf
-INPUT c:/texlive/2013/texmf-var/web2c/pdftex/latex.fmt
-INPUT conclusion.tex
-OUTPUT conclusion.log
