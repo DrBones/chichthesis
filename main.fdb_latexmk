@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main"] 1381104484 "main.bcf" "main.bbl" "main" 1381104513
+["biber main"] 1381105981 "main.bcf" "main.bbl" "main" 1381106871
   "ego_depletion_final_latin.bib" 1381103925 79992 0bade58bf01f94c8e182bf8b1990b9ac ""
-  "main.bcf" 1381104512 96882 cfa8f0c7799b87acda9e0b4480c1c54d ""
+  "main.bcf" 1381106870 96882 cfa8f0c7799b87acda9e0b4480c1c54d ""
   (generated)
   "main.bbl"
-["pdflatex"] 1381104504 "main.tex" "main.pdf" "main" 1381104513
+["pdflatex"] 1381106862 "main.tex" "main.pdf" "main" 1381106871
   "abstract.tex" 1381077564 724 b1261b1432b27b7c0eaea8088cee8a91 ""
   "c:/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1379692372 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1379692562 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -238,9 +238,9 @@
   "c:/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1379693699 1135367 347ebbf080e73bdcbc6045fc23163302 ""
   "c:/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1379693734 3823940 137194946d8476fc0d8e53b5d7786d08 ""
   "c:/texlive/2013/texmf.cnf" 1379693686 497 7277663fd190ea5a4fe922b182dc7be2 ""
-  "effectsofdepletion.tex" 1381099673 21178 083f76e42cb5620f275cf8564bb14730 ""
+  "effectsofdepletion.tex" 1381106861 21228 7f017350a8f9e54627cee5bb2074c92f ""
   "egodepletioninanutshell.tex" 1381103087 4898 e6d1e5eee716990fe784d576bfca0e0b ""
-  "generaldiscussion.tex" 1381072637 15537 13f5ac9d360264bcc57b5ed863e4b72f ""
+  "generaldiscussion.tex" 1381105824 15612 87af646e48524e7cfff01333da56ea83 ""
   "header.tex" 1381104473 14849 5ccda95498b73783837e551b31924b17 ""
   "images/PNAS-2011-Danziger-6889-92.pdf" 1381071818 612565 839c1f86badcb10e5c9c1ca54166f8e1 ""
   "images/Pretest4.3.pdf" 1381071796 608342 f205a6251368e72a1676e0b9bdad4844 ""
@@ -265,17 +265,17 @@
   "images/pretest_sofa.png" 1380834972 32469 1c3fa80aa41d0c680ba2e8c3b95ba2ac ""
   "images/pretest_wine.png" 1380834980 35291 bca437c40296ba39e9e05db8394a661d ""
   "images/twostreams.png" 1380478659 40859 b9d25fa6dcedb3306cb6103831a961a9 ""
-  "main.aux" 1381104512 44754 f97056c7a456d40c18b07999efcf0fb1 ""
-  "main.bbl" 1381104486 57433 8f5e2e812b77fdc4701a9e9dc447a2cf "biber main"
-  "main.run.xml" 1381104512 2326 ef45f389b7b9f141ecd4033637a5e720 ""
+  "main.aux" 1381106870 45129 66d43d29563b7934ef98cb5a8914083a ""
+  "main.bbl" 1381105983 57433 8f5e2e812b77fdc4701a9e9dc447a2cf "biber main"
+  "main.run.xml" 1381106870 2326 ef45f389b7b9f141ecd4033637a5e720 ""
   "main.tex" 1381101361 1424 4ba13d2e7be141f1caab9a8adb20bdfc ""
-  "main.toc" 1381104512 3931 3f6a0aa1cccf3648e4dfbb38e2bd62d5 ""
-  "method.tex" 1381101120 38589 d6d83b5025a286f3e9d50dc75a960b2d ""
-  "results.tex" 1381099673 57765 220f8ac0a0f69cf8569dce981639753a ""
+  "main.toc" 1381106870 3931 11167ac07a89d0bc825883c8456578ed ""
+  "method.tex" 1381106681 38806 08d45471fc0c5fd77b9bfd9243abc374 ""
+  "results.tex" 1381106638 57795 18b201e9dc5aec8e9a42ffc78b9c73b1 ""
   (generated)
   "main.bcf"
   "main.log"
   "main.pdf"
-  "main.toc"
   "main.aux"
+  "main.toc"
   "main.run.xml"
